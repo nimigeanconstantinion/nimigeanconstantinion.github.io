@@ -4,7 +4,7 @@
 body{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(300px,1fr) minmax(150px,auto) 1fr 1fr;
+    grid-template-rows: minmax(300px,auto) minmax(150px,auto) 1fr minmax(100px,auto);
     font-size: 1em;
     color:#EDF2F3;
     background:white;
@@ -15,10 +15,13 @@ header{
     display: flex;
     flex-direction: column;
     background: #1F3541;
-    
+    color: white;
 }
 header h1{
 align-self: auto;
+}
+header p{
+    color: white;
 }
 #menius{
     display: flex;
@@ -34,18 +37,48 @@ align-self: auto;
     background: #AFD8F2;
     width: 90%;
     font-size: 2em;
-    border-radius: 5% 5%;
+    border-radius: 5px;
     align-self: center;
-    margin-top: 2px;
+    margin-top: 5px;
     color: #1F3541;
 }
 aside{
+    margin-top: 10px;
     background: #AFD8F2;
     color: #1F3541;
 }
 main{
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+.domeniu{
+    display: flex;
+    flex-direction: column;
+    
+}
+.imag{
+    display: flex;
+    justify-content: center;
+}
+.domeniu h3, p{
+    color: #1F3541;
+}
+
+footer{
+    background: #1F3541;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+footer a,.fas{
+    color: white;
+}
+footer a{
+    text-decoration: none;
 }
